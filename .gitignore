@@ -1,0 +1,8 @@
+# .gitignore file for S3 projects
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
