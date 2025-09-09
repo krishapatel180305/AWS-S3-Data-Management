@@ -1,0 +1,21 @@
+# This is a sample YAML configuration file for AWS resources.
+# It demonstrates the setup of a VPC, subnets, and security groups.
+
+VPC:
+  Name: MyVPC
+  CIDR: 10.0.0.0/16
+
+Subnets:
+  PublicSubnet:
+    CIDR: 10.0.1.0/24
+  PrivateSubnet:
+    CIDR: 10.0.2.0/24
+
+SecurityGroups:
+  WebServerSG:
+    Description: Security group for web servers
+    Rules:
+      - Protocol: TCP
+        Port: 80
+      - Protocol: TCP
+        Port: 443
